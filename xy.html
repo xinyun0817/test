@@ -12,10 +12,10 @@
 <script>
 const data = [{name:'name 1'},{name: 'name 2'}]
 
-document.getElementById("demo").innerHTML = <p>persons.map(getFullName)</p>;
+document.getElementById("demo").innerHTML = persons.map(getFullName);
 
 function getFullName(item) {
-  return item.name;
+  return <p>item.name</p>;
 }
   
 
