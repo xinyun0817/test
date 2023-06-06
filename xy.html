@@ -6,7 +6,16 @@
 <body>
 
 <h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<p>This is a parag<p id="demo"></p>
+
+<script>
+const data = [{name:'name 1'},{name: 'name 2'}]
+
+document.getElementById("demo").innerHTML = data.map(item=>{
+  return(<p>item.name</p>)
+})
+
+</script>
 
 </body>
 </html>
