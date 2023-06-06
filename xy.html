@@ -12,9 +12,11 @@
 <script>
 const data = [{name:'name 1'},{name: 'name 2'}]
 
-document.getElementById("demo").innerHTML = data.map(item=>{
+document.getElementById("demo").innerHTML = 
+  `<p>${data.map(item=>{
   return(<p>item.name</p>)
-})
+})}</p>`
+
 
 </script>
 
