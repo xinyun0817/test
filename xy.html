@@ -7,17 +7,24 @@
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph</p>
-<p id="demo"></p>
-
-<script>
-const data = [{name:'name 1'},{name: 'name 2'}]
-
-document.getElementById("demo").innerHTML = persons.map(getFullName);
-
-function getFullName(item) {
-  return item.name;
-}
-  
+<pre id="idCons"> </pre>
+   <script>
+      // An array of objects
+      function infoDisp(id, name, job) {
+         this.Id = id;
+         this.Name = name;
+         this.Work = job;
+      }
+      const a = new infoDisp(1, "John", "Doctor");
+      const b = new infoDisp(2, "Grace", "Homemaker");
+      const c = new infoDisp(3, "Eagan", "Not working");
+      //print
+      console.log('%cThe JavaScript program prints an array of objects
+      using %cconsole.table() method', 'font-weight: bold; font-size:
+      16px;color: #000000;', 'font-weight: bold; font-style: italic; font-size:
+      16px;color: #000000;');
+      console.table([a, b, c], ["Name", "Work"]);
+   </script>
 
 
 </script>
